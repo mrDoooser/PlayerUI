@@ -13,9 +13,13 @@ public class PlayerInfo
     public string TeamName;
     public int InMainSquad;
     public string CoatchName;
+    public int MainSquare;
     public int CoathID;
     public int PlayerRoleID;
     public string PlayerRole; // роль игрока (К - Капитан, ГК - голкипер)
+
+    private int grade;
+
     public int Grade { get; set; } // оценка
     public int PlayTime { get; set; }// минут
     public int Goals { get; set; }// Голы 
@@ -37,7 +41,6 @@ public class PlayerInfo
         //    newPlayer.RedCard = true;
         //if (Random.Range(0, 2) > 0)
         //    newPlayer.YellowCard = true;
-
         return newPlayer;
     }
 
